@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>html normalize demo</title>
+    
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+    <style>
+        /* ===== 页面演示样式 ===== */
+        body {
+            margin: 40px auto;
+            max-width: 900px;
+            padding: 0 20px;
+            background: #f5f6f7;
+        }
+
+        section {
+            background: #fff;
+            padding: 28px;
+            margin-bottom: 28px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-top: 0;
+            border-left: 4px solid #4c8bf5;
+            padding-left: 12px;
+        }
+
+        p {
+            margin: 14px 0;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🌍 多语言字体渲染效果演示</h1>
+
+    <section>
+        <h2>🇺🇸 English Paragraph</h2>
+        <p>
+            Typography plays a crucial role in user interface design. A well-chosen typeface improves readability,
+            establishes visual hierarchy, and creates a consistent brand personality across digital platforms.
+            System UI fonts are often preferred because they provide excellent rendering performance and match
+            the native operating system’s visual style.
+        </p>
+        <p>
+            When a multilingual website displays English content, Latin glyph clarity, spacing, and weight balance
+            are especially important. Good sans-serif fonts ensure comfortable long-form reading and maintain
+            clean alignment in data tables, navigation menus, and interactive components.
+        </p>
+    </section>
+
+    <section lang="zh-CN">
+        <h2>🇨🇳 简体中文段落</h2>
+        <p>
+            字体在界面设计中不仅影响美观程度，更直接关系到信息的传达效率。合适的中文字体能够
+            让长时间阅读变得更加轻松，同时在不同分辨率和不同设备上保持清晰锐利的显示效果。
+            现代系统字体通常针对屏幕显示进行了专门优化，因此在网页和应用界面中具有更好的表现。
+        </p>
+        <p>
+            在简体中文环境下，黑体类无衬线字体更适合数字产品界面。它们结构清晰、笔画稳定，
+            在正文、标题以及数据展示等多种场景中都能保持良好的可读性与专业感，从而提升整体用户体验。
+        </p>
+    </section>
+
+
+
+    <section lang="zh-TW">
+        <h2>🇹🇼 繁體中文段落</h2>
+        <p>
+            在數位產品設計中，字體選擇會直接影響閱讀體驗與介面質感。繁體中文字形結構較為複雜，
+            因此需要專門優化的字體來呈現細節，才能在高解析度螢幕上維持清晰與平衡。
+        </p>
+        <ul>
+        </ul>
+        <p>
+            良好的字重配置與行距控制，能讓長篇內容閱讀更加舒適，同時在資訊層級呈現上更加清楚。
+            當系統字體與介面風格保持一致時，整體產品會顯得更加自然且專業。
+        </p>
+    </section>
+
+    <section lang="ja">
+        <h2>🇯🇵 日本語の段落</h2>
+        <p>
+            タイポグラフィはユーザーインターフェース設計において重要な役割を果たします。
+            適切なフォントを選択することで、可読性が向上し、情報の階層構造が明確になります。
+            また、長時間の閲覧でも目の疲れを軽減する効果があります。
+        </p>
+        <p>
+            日本語フォントは文字の骨格や字形の違いが大きいため、専用に設計されたフォントを
+            使用することが望ましいです。システムフォントを優先することで、表示速度と
+            ネイティブアプリケーションとの統一感を両立できます。
+        </p>
+    </section>
+
+    <section lang="ko">
+        <h2>🇰🇷 한국어 단락</h2>
+        <p>
+            타이포그래피는 사용자 인터페이스 디자인에서 중요한 역할을 합니다.
+            적절한 글꼴을 선택하면 가독성이 향상되고 정보의 계층 구조가 더 명확해집니다.
+            또한 장시간 화면을 볼 때 눈의 피로를 줄이는 데에도 도움이 됩니다.
+        </p>
+        <p>
+            한국어 글꼴은 글자 구조와 형태의 차이가 크기 때문에 전용으로 설계된 글꼴을
+            사용하는 것이 좋습니다. 시스템 글꼴을 우선적으로 사용하면 렌더링 성능을 높이고
+            네이티브 애플리케이션과의 일관성도 유지할 수 있습니다.
+        </p>
+    </section>
+
+    <section lang="ar" dir="rtl">
+        <h2>🇸🇦 فقرة باللغة العربية</h2>
+        <p>
+            تلعب الطباعة دورًا أساسيًا في تصميم واجهات المستخدم، حيث تؤثر بشكل مباشر على سهولة القراءة
+            وجمالية العرض. اختيار الخط المناسب يساعد على تقديم المحتوى بطريقة واضحة ومنظمة،
+            خصوصًا عند عرض نصوص طويلة على الشاشات الرقمية.
+        </p>
+        <p>
+            الخطوط العربية تتطلب عناية خاصة بسبب طبيعة الكتابة المتصلة واتجاه النص من اليمين إلى اليسار.
+            استخدام خطوط مُحسّنة للشاشات يضمن وضوح الحروف وتناسق المسافات، مما يحسن تجربة المستخدم
+            ويجعل التصفح أكثر سلاسة واحترافية.
+        </p>
+    </section>
+<script src="./toggle-css.js"></script>
+</body>
+
+</html>

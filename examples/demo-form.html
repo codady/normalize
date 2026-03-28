@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+  <title>原生表单控件示例</title>
+
+  <style>
+    body {
+      background: #f5f6f7;
+      padding: 40px;
+
+    }
+
+    form {
+      max-width: 1200px;
+      background: #fff;
+      padding: 24px 28px;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+    }
+
+
+    .row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 12px 16px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+
+    .actions {
+      margin-top: 20px;
+      display: flex;
+      gap: 12px;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <form>
+    <h1>🧩 原生表单控件示例</h1>
+
+    <!-- 文本输入 -->
+    <fieldset>
+      <legend>文本类输入</legend>
+
+      <div class="row">
+        <label>text</label>
+        <input type="text" placeholder="普通文本输入">
+      </div>
+
+      <div class="row">
+        <label>password</label>
+        <input type="password" placeholder="密码输入">
+      </div>
+
+      <div class="row">
+        <label>email</label>
+        <input type="email" placeholder="email@example.com">
+      </div>
+
+      <div class="row">
+        <label>tel</label>
+        <input type="tel" placeholder="手机号">
+      </div>
+
+      <div class="row">
+        <label>url</label>
+        <input type="url" placeholder="https://example.com">
+      </div>
+
+      <div class="row">
+        <label>search</label>
+        <input type="search" placeholder="搜索内容">
+      </div>
+
+      <div class="row">
+        <label>textarea</label>
+        <textarea rows="4" placeholder="多行文本输入"></textarea>
+      </div>
+    </fieldset>
+
+    <!-- 数值与时间 -->
+    <fieldset>
+      <legend>数值与时间</legend>
+
+      <div class="row">
+        <label>number</label>
+        <input type="number" min="0" max="100" step="1" value="10">
+      </div>
+
+      <div class="row">
+        <label>range</label>
+        <input type="range" min="0" max="100" value="40">
+      </div>
+
+      <div class="row">
+        <label>date</label>
+        <input type="date">
+      </div>
+
+      <div class="row">
+        <label>time</label>
+        <input type="time">
+      </div>
+
+      <div class="row">
+        <label>datetime-local</label>
+        <input type="datetime-local">
+      </div>
+
+      <div class="row">
+        <label>month</label>
+        <input type="month">
+      </div>
+
+      <div class="row">
+        <label>week</label>
+        <input type="week">
+      </div>
+
+      <div class="row">
+        <label>color</label>
+        <input type="color" value="#2563eb">
+      </div>
+    </fieldset>
+
+    <!-- 选择类 -->
+    <fieldset>
+      <legend>选择类控件</legend>
+
+      <div class="row">
+        <label>checkbox</label>
+        <div>
+          <label><input type="checkbox" checked> 选项 A</label>
+          <label><input type="checkbox"> 选项 B</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>radio</label>
+        <div>
+          <label><input type="radio" name="r" checked> 单选 A</label>
+          <label><input type="radio" name="r"> 单选 B</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>select</label>
+        <select>
+          <optgroup label="分组一">
+            <option>选项 1</option>
+            <option>选项 2</option>
+          </optgroup>
+          <optgroup label="分组二">
+            <option>选项 3</option>
+            <option>选项 4</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="row">
+        <label>datalist</label>
+        <div>
+          <input list="browsers" placeholder="输入或选择">
+          <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+          </datalist>
+        </div>
+      </div>
+    </fieldset>
+
+    <hr/>
+
+    <!-- 上传与按钮 -->
+    <fieldset>
+      <legend>上传与按钮</legend>
+
+      <div class="row">
+        <label>file</label>
+        <input type="file">
+      </div>
+
+      <div class="row">
+        <label>multiple file</label>
+        <input type="file" multiple>
+      </div>
+
+      <div class="row">
+        <label>buttons</label>
+        <div class="actions">
+          <button type="button">普通按钮</button>
+          <button type="submit">提交</button>
+          <button type="reset">重置</button>
+          <input type="button" value="input按钮">
+          <input type="submit" value="input提交">
+          <input type="reset" value="input重置">
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- 进度指示 -->
+    <fieldset>
+      <legend>进度指示</legend>
+
+      <div class="row">
+        <label>progress</label>
+        <progress value="60" max="100"></progress>
+      </div>
+
+      <div class="row">
+        <label>meter</label>
+        <meter min="0" max="100" value="70"></meter>
+      </div>
+    </fieldset>
+
+  </form>
+
+
+<script src="./toggle-css.js"></script>
+</body>
+
+</html>

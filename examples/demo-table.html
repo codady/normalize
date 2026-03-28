@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plain Table Demo</title>
+   
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+</head>
+<body>
+  
+  <table>
+    <caption>用户列表</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">姓名</th>
+        <th scope="col">邮箱</th>
+        <th scope="col">角色</th>
+        <th scope="col">状态</th>
+        <th scope="col">注册时间</th>
+        <th scope="col">操作</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1001</td>
+        <td>张三</td>
+        <td>zhangsan@example.com</td>
+        <td>管理员</td>
+        <td>正常</td>
+        <td>2026-01-12</td>
+        <td><a href="#">编辑</a></td>
+      </tr>
+
+      <tr>
+        <td>1002</td>
+        <td>李四</td>
+        <td>lisi@example.com</td>
+        <td>编辑</td>
+        <td>待审核</td>
+        <td>2026-02-03</td>
+        <td><a href="#">编辑</a></td>
+      </tr>
+
+      <tr>
+        <td>1003</td>
+        <td>王五</td>
+        <td>wangwu@example.com</td>
+        <td>访客</td>
+        <td>已禁用</td>
+        <td>2026-02-18</td>
+        <td><a href="#">编辑</a></td>
+      </tr>
+
+      <tr>
+        <td>1004</td>
+        <td>赵六</td>
+        <td>zhaoliu@example.com</td>
+        <td>管理员</td>
+        <td>正常</td>
+        <td>2026-03-01</td>
+        <td><a href="#">编辑</a></td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="7">共 4 条记录</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+  <script src="./toggle-css.js"></script>
+</body>
+</html>

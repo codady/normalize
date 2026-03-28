@@ -1,0 +1,64 @@
+{
+  "name": "normalax",
+  "version": "0.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "AXUI Development Team",
+  "license": "MIT",
+  "description": "Normalax, A modern alternative to normalize.css, focused on typography, form usability, and cross-browser consistency.",
+  "exports": {
+    ".": "./dist/normalax.min.css"
+  },
+  "type":"module",
+  "directories": {
+    "doc": "docs"
+  },
+  "private": false,
+  "workspaces": [],
+  "files": [
+    "examples",
+    "dist",
+    "src",
+    "package.json",
+    "script-mini.js",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "terser": "^5.27.2"
+  },
+  "scripts": {
+    "mini": "node script-mini.js",
+    "push": "node script-push.js",
+    "all": "npm run mini && npm publish  && (npm run push || true)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codady/normalax"
+  },
+  "extraRepositories": [
+    {
+      "type": "git",
+      "url": "https://gitee.com/codady/normalax"
+    }
+  ],
+  "keywords": [
+    "javascript",
+    "es6",
+    "components",
+    "vnode",
+    "mvvm",
+    "html5",
+    "css3"
+  ],
+  "bugs": {
+    "url": "https://github.com/codady/normalax/issues"
+  },
+  "homepage": "https://www.axui.cn",
+  "dependencies": {
+    "simple-git": "^3.27.0"
+  }
+}

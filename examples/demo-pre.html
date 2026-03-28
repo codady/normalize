@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>pre / code 演示</title>
+
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+  <style>
+    
+   
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    /* 单独 code */
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #d6336c;
+    }
+
+    /* pre */
+    pre {
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 16px;
+      border-radius: 8px;
+      overflow: auto;
+    }
+
+    /* pre + code（常见代码块） */
+    pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧪 pre / code 标签演示</h1>
+
+  <!-- 1. 单独 code -->
+  <section>
+    <h2>① 单独使用 &lt;code&gt;</h2>
+    <p>
+      这是一个行内代码示例：<code>const x = 10;</code>
+    </p>
+    <p>
+      适用于：变量名、函数名、简短代码片段。
+    </p>
+  </section>
+
+  <!-- 2. 单独 pre -->
+  <section>
+    <h2>② 单独使用 &lt;pre&gt;</h2>
+    <pre>
+function hello() {
+    console.log("Hello World");
+}
+    </pre>
+    <p>
+      特点：保留空格和换行，但语义上只是“预格式文本”。
+    </p>
+  </section>
+
+  <!-- 3. pre + code -->
+  <section>
+    <h2>③ &lt;pre&gt; 嵌套 &lt;code&gt;（推荐）</h2>
+    <pre><code>function hello() {
+  console.log("Hello World");
+}</code></pre>
+
+    <p>
+      ✅ 这是<strong>标准写法</strong>，语义更清晰：<br>
+      - &lt;pre&gt;：负责排版（保留格式）<br>
+      - &lt;code&gt;：表示“这是代码”
+    </p>
+  </section>
+
+  <!-- 4. 对比 -->
+  <section>
+    <h2>④ 对比总结</h2>
+    <ul>
+      <li><code>&lt;code&gt;</code>：行内代码（不会换行）</li>
+      <li><code>&lt;pre&gt;</code>：保留格式文本</li>
+      <li><code>&lt;pre&gt;&lt;code&gt;</code>：最佳实践（代码块）</li>
+    </ul>
+  </section>
+<script src="./toggle-css.js"></script>
+</body>
+</html>

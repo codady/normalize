@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Typography Line-height Demo</title>
+
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+<style>
+
+/* ===== 布局 ===== */
+section {
+  margin-bottom: 60px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ddd;
+}
+
+h2.section-title {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* 控制换行宽度 */
+.test {
+  max-width: 420px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🌍 Typography Line-height Demo</h1>
+
+<!-- 中文 -->
+<section lang="zh">
+  <h2 class="section-title">🇨🇳 中文</h2>
+
+  <div class="test">
+    <h1>这是一个用于测试标题换行效果的中文标题示例</h1>
+    <h2>这是一个用于测试标题换行效果的中文标题示例</h2>
+    <h3>这是一个用于测试标题换行效果的中文标题示例</h3>
+    <h4>这是一个用于测试标题换行效果的中文标题示例</h4>
+    <h5>这是一个用于测试标题换行效果的中文标题示例</h5>
+    <h6>这是一个用于测试标题换行效果的中文标题示例</h6>
+  </div>
+</section>
+
+<!-- 日文 -->
+<section lang="ja">
+  <h2 class="section-title">🇯🇵 日本語</h2>
+
+  <div class="test">
+    <h1>これは見出しの改行表示を確認するための日本語のサンプルです</h1>
+    <h2>これは見出しの改行表示を確認するための日本語のサンプルです</h2>
+    <h3>これは見出しの改行表示を確認するための日本語のサンプルです</h3>
+    <h4>これは見出しの改行表示を確認するための日本語のサンプルです</h4>
+    <h5>これは見出しの改行表示を確認するための日本語のサンプルです</h5>
+    <h6>これは見出しの改行表示を確認するための日本語のサンプルです</h6>
+  </div>
+</section>
+
+<!-- 韩文 -->
+<section lang="ko">
+  <h2 class="section-title">🇰🇷 한국어</h2>
+
+  <div class="test">
+    <h1>이 문장은 제목 줄바꿈 표시를 확인하기 위한 한국어 샘플입니다</h1>
+    <h2>이 문장은 제목 줄바꿈 표시를 확인하기 위한 한국어 샘플입니다</h2>
+    <h3>이 문장은 제목 줄바꿈 표시를 확인하기 위한 한국어 샘플입니다</h3>
+    <h4>이 문장은 제목 줄바꿈 표시를 확인하기 위한 한국어 샘플입니다</h4>
+    <h5>이 문장은 제목 줄바꿈 표시를 확인하기 위한 한국어 샘플입니다</h5>
+    <h6>이 문장은 제목 줄바꿈 표시를 확인하기 위한 한국어 샘플입니다</h6>
+  </div>
+</section>
+
+<!-- 阿拉伯语 -->
+<section lang="ar" dir="rtl">
+  <h2 class="section-title">🇸🇦 العربية</h2>
+
+  <div class="test">
+    <h1>هذا نص عربي لاختبار كيفية عرض العناوين عند التفاف السطر في التصميم</h1>
+    <h2>هذا نص عربي لاختبار كيفية عرض العناوين عند التفاف السطر في التصميم</h2>
+    <h3>هذا نص عربي لاختبار كيفية عرض العناوين عند التفاف السطر في التصميم</h3>
+    <h4>هذا نص عربي لاختبار كيفية عرض العناوين عند التفاف السطر في التصميم</h4>
+    <h5>هذا نص عربي لاختبار كيفية عرض العناوين عند التفاف السطر في التصميم</h5>
+    <h6>هذا نص عربي لاختبار كيفية عرض العناوين عند التفاف السطر في التصميم</h6>
+  </div>
+</section>
+
+<!-- 拉丁 -->
+<section lang="en">
+  <h2 class="section-title">🇬🇧 Latin (English)</h2>
+
+  <div class="test">
+    <h1>This is a sample heading used to test line wrapping behavior in typography systems</h1>
+    <h2>This is a sample heading used to test line wrapping behavior in typography systems</h2>
+    <h3>This is a sample heading used to test line wrapping behavior in typography systems</h3>
+    <h4>This is a sample heading used to test line wrapping behavior in typography systems</h4>
+    <h5>This is a sample heading used to test line wrapping behavior in typography systems</h5>
+    <h6>This is a sample heading used to test line wrapping behavior in typography systems</h6>
+  </div>
+</section>
+<script src="./toggle-css.js"></script>
+</body>
+</html>

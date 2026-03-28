@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summary 示例</title>
+
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+<style>
+
+
+details{
+  width: 420px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  padding:16px 18px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<details>
+  <summary>📘 什么是 HTML 的 details / summary？</summary>
+  <div>
+    <p>
+      details 和 summary 是一组原生的可折叠组件标签，
+      不需要 JavaScript 就能实现展开 / 收起交互。
+    </p>
+    <p>
+      点击标题即可切换显示状态，非常适合：
+    </p>
+    <ul>
+      <li>常见问题 FAQ</li>
+      <li>说明文档折叠块</li>
+      <li>高级选项面板</li>
+    </ul>
+  </div>
+</details>
+<script src="./toggle-css.js"></script>
+</body>
+</html>

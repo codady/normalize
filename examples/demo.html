@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <title>normalax Demo</title>
+
+  <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+    <style>
+        body {
+            padding: 20px;
+            background: #f5f5f5;
+            font-size: 16px;
+        }
+
+        section {
+            background: #fff;
+            padding: 16px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .demo-box {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid #333;
+            background: #ddd;
+            margin-bottom: 10px;
+        }
+
+        table {
+            border: 2px solid currentColor;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid currentColor;
+            padding: 6px 10px;
+        }
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+
+        code {
+            background: #eee;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>modern-normalize 功能演示</h1>
+
+    <!-- 1 盒模型 -->
+    <section>
+        <h2>① box-sizing: border-box</h2>
+        <div class="demo-box">
+            width:200px + padding:20 + border:10
+        </div>
+        <p>开启后：元素总宽度仍然是 200px（更符合直觉）</p>
+    </section>
+
+    <!-- 2 body 默认 margin -->
+    <section>
+        <h2>② body 默认外边距被移除</h2>
+        <p>页面四周不再有浏览器默认白边</p>
+    </section>
+
+    <!-- 3 字体系统 -->
+    <section>
+        <h2>③ 系统字体栈</h2>
+        <p>The quick brown fox jumps over the lazy dog</p>
+        <p>系统 UI 字体更清晰现代</p>
+    </section>
+
+    <!-- 4 加粗一致 -->
+    <section>
+        <h2>④ b / strong 加粗一致性</h2>
+        <p><b>b 标签加粗</b></p>
+        <p><strong>strong 标签加粗</strong></p>
+    </section>
+
+    <!-- 5 等宽字体 -->
+    <section>
+        <h2>⑤ 等宽字体统一</h2>
+        <p>内联代码：<code>npm install</code></p>
+        <pre>
+function hello(){
+  console.log("monospace");
+}
+</pre>
+    </section>
+
+    <!-- 6 small -->
+    <section>
+        <h2>⑥ small 字号比例统一</h2>
+        <p>正常文字</p>
+        <p><small>small 文字</small></p>
+    </section>
+
+    <!-- 7 上下标 -->
+    <section>
+        <h2>⑦ sub / sup 不影响行高</h2>
+        <p>
+            H<sub>2</sub>O 是水　
+            E = mc<sup>2</sup>
+        </p>
+        <p>上下标不会把整行撑高</p>
+    </section>
+
+    <!-- 8 表格边框颜色继承 -->
+    <section style="color:#c00">
+        <h2>⑧ 表格边框颜色继承文字颜色</h2>
+        <table>
+            <tr>
+                <td>A1</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <td>A2</td>
+                <td>B2</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 9 表单字体继承 -->
+    <section>
+        <h2>⑨ 表单字体统一继承</h2>
+        <div class="form-row">
+            <button>按钮 Button</button>
+        </div>
+        <div class="form-row">
+            <input placeholder="输入框 input">
+        </div>
+        <div class="form-row">
+            <select>
+                <option>下拉框 select</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <textarea placeholder="多行文本 textarea"></textarea>
+        </div>
+    </section>
+
+    <!-- 10 搜索框样式 -->
+    <section>
+        <h2>⑩ 搜索框外观统一</h2>
+        <input type="search" placeholder="search input">
+    </section>
+
+    <!-- 11 数字输入框 -->
+    <section>
+        <h2>⑪ 数字输入框微调</h2>
+        <input type="number" value="10">
+    </section>
+
+    <!-- 12 文件上传按钮 -->
+    <section>
+        <h2>⑫ 文件上传按钮可样式化</h2>
+        <input type="file">
+    </section>
+
+    <!-- 13 progress 对齐 -->
+    <section>
+        <h2>⑬ progress 垂直对齐修正</h2>
+        <p>
+            下载进度：
+            <progress value="70" max="100"></progress>
+            70%
+        </p>
+    </section>
+
+    <!-- 14 details / summary -->
+    <section>
+        <h2>⑭ summary 显示方式修正</h2>
+        <details>
+            <summary>点击展开</summary>
+            <p>这里是折叠内容</p>
+        </details>
+    </section>
+<script src="./toggle-css.js"></script>
+</body>
+
+</html>

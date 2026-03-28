@@ -32,6 +32,7 @@
   },
   "scripts": {
     "mini": "node script-mini.js",
+    "git": "node script-git.js",
     "push": "node script-push.js",
     "all": "npm run mini && npm publish  && (npm run push || true)"
   },

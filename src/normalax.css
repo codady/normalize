@@ -1,6 +1,6 @@
 /**
  * Normalax
- * Last modified: 2026-03-29 22:50:35
+ * Last modified: 2026-03-30 10:17:42
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -197,20 +197,24 @@
   h1 {
     line-height: var(--leading-tight);
   }
-  h2 {
-    line-height: var(--leading-snug);
-  }
+  h2,
   h3 {
     line-height: var(--leading-snug);
   }
-  h4 {
-    line-height: var(--leading-compact);
-  }
+  h4,
   h5 {
     line-height: var(--leading-compact);
   }
   h6 {
     line-height: var(--leading-normal);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-block: 0;
   }
   /* Fine-tune line-height for CJK text cjk微调 */
   :where(:lang(zh)) h1,

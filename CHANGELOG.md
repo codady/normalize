@@ -2,6 +2,25 @@
 
 All changes to Normalax including new features, updates, and removals are documented here.
 
+## [v0.0.4] - 2026-03-30
+
+### Distribution Files
+- **Mini file**: https://unpkg.com/@codady/normalax@0.0.4/dist/normalax.min.css
+- **Source file**: https://unpkg.com/@codady/normalax@0.0.4/src/normalax.css
+- **Less file**: https://unpkg.com/@codady/normalax@0.0.4/src/normalax.less
+
+### Changes
+
+#### Fixed
+- Remove the `margin` attribute of `h1~h6`. 去掉`h1~h6`的`margin`属性。
+
+#### Added
+- Null
+
+#### Removed
+- Null
+
+
 ## [v0.0.3] - 2026-03-29
 
 ### Distribution Files

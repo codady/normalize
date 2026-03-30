@@ -2,6 +2,26 @@
 
 All changes to Normalax including new features, updates, and removals are documented here.
 
+## [v0.0.6] - 2026-03-30
+
+### Distribution Files
+- **Mini file**: https://unpkg.com/@codady/normalax@0.0.6/dist/normalax.min.css
+- **Source file**: https://unpkg.com/@codady/normalax@0.0.6/src/normalax.css
+- **Less file**: https://unpkg.com/@codady/normalax@0.0.6/src/normalax.less
+
+### Changes
+
+#### Fixed
+- Null。
+
+#### Added
+- Add `--default-border-radius` CSS variable. 增加`--default-border-radius`变量。
+- Add `examples/index.html`. 增加了`examples/index.html`页面。
+
+#### Removed
+- Null
+
+
 ## [v0.0.5] - 2026-03-30
 
 ### Distribution Files

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalax 示例目录</title>
+    <link id="normalax-css" rel="stylesheet" href="../src/normalax.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #64748b;
+            --background-color: #f8fafc;
+            --card-background: #ffffff;
+            --border-color: #e2e8f0;
+            --text-color: #334155;
+            --text-light: #64748b;
+        }
+
+        body {
+            font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .description {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            background: var(--card-background);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: var(--card-background);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-color: var(--primary-color);
+        }
+
+        .card-header {
+            padding: 20px;
+            background: linear-gradient(135deg, var(--primary-color), #3b82f6);
+            color: white;
+        }
+
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .card-content {
+            padding: 20px;
+            flex-grow: 1;
+        }
+
+        .card-description {
+            color: var(--text-light);
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card-footer {
+            padding: 0 20px 20px;
+            margin-top: auto;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .card-link:hover {
+            background-color: #1d4ed8;
+        }
+
+        .demo-count {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            margin-left: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Normalax 示例目录</h1>
+            <p class="subtitle">一个现代化的 normalize.css 替代方案，专注于排版、表单可用性和跨浏览器一致性</p>
+            
+            <div class="description">
+                <p>Normalax 是一个现代化的 CSS 基础样式库，它修复浏览器默认样式差异，提供干净的排版基线，优化表单与媒体元素体验，同时保持布局中立性。</p>
+                <p>以下展示了 Normalax 的各种功能演示，点击卡片查看详细示例。</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="grid">
+                <!-- 主演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3 class="card-title">综合演示 <span class="demo-count">主演示</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示 Normalax 的核心功能，包括盒模型、字体系统、表单元素、表格等综合示例。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 表单演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📝</div>
+                        <h3 class="card-title">表单控件 <span class="demo-count">表单</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示所有原生表单控件的样式，包括输入框、选择器、按钮、文件上传等，体验表单可用性优化。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-form.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 排版演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🔤</div>
+                        <h3 class="card-title">多语言排版 <span class="demo-count">标题</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示中、英、日、韩、阿拉伯语等多种语言的标题排版效果，体验行高优化和字体栈系统。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-heading.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 表格演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">表格样式 <span class="demo-count">表格</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示表格元素的默认样式，包括边框颜色继承、表格布局优化等特性。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-table.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 列表演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📋</div>
+                        <h3 class="card-title">列表元素 <span class="demo-count">列表</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示有序列表、无序列表、定义列表等列表元素的默认样式和排版效果。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-list.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 代码演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">💻</div>
+                        <h3 class="card-title">代码块 <span class="demo-count">代码</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示代码块、内联代码、键盘输入等元素的样式，体验等宽字体统一和预格式文本换行。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-pre.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 文本演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📄</div>
+                        <h3 class="card-title">文本元素 <span class="demo-count">文本</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示段落、引用、强调、上下标等文本语义元素的样式和排版效果。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-text.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 折叠面板演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">📑</div>
+                        <h3 class="card-title">折叠面板 <span class="demo-count">详情</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示 details 和 summary 元素的默认样式，体验折叠面板的交互效果。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-summary.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+
+                <!-- 标签页演示 -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">🗂️</div>
+                        <h3 class="card-title">标签页 <span class="demo-count">标签</span></h3>
+                    </div>
+                    <div class="card-content">
+                        <p class="card-description">展示标签页导航的样式和交互效果，体验导航元素的默认样式。</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="demo-tab.html" class="card-link">查看演示</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Normalax &copy; 2026 - 一个现代化的 normalize.css 替代方案</p>
+            <p>项目地址: 
+                <a href="https://github.com/codady/normalax" target="_blank">GitHub</a> | 
+                <a href="https://gitee.com/codady/normalax" target="_blank">Gitee</a>
+            </p>
+            <a href="../" class="back-link">返回项目根目录</a>
+        </footer>
+    </div>
+
+    <script src="./toggle-css.js"></script>
+</body>
+</html>

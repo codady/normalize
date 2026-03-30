@@ -3,6 +3,10 @@
 
 A modern alternative to normalize.css, focused on typography, form usability, and cross-browser consistency.
 
+### Demos
+
+[See all demos](https://unpkg.com/normalax/examples/index.html)
+
 
 ### 📥 Installation
 
@@ -161,6 +165,10 @@ MIT License
 # 中文说明
 
 一个现代化的 normalize.css 替代方案，专注于排版、表单可用性以及跨浏览器一致性。
+
+### 演示
+
+[查看所有演示](https://unpkg.com/normalax/examples/index.html)
 
 
 ### 📥 安装

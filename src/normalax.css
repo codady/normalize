@@ -1,6 +1,6 @@
 /**
  * Normalax
- * Last modified: 2026-03-30 14:33:27
+ * Last modified: 2026-03-30 15:02:52
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -9,7 +9,6 @@
  * 4. Stay layout-neutral 尽量不干涉具体布局
  */
 @layer base {
-
   /* ==================================================
    Design Tokens — Typography
    设计令牌：字体系统
@@ -114,7 +113,6 @@
     /* More breathing room for CJK 中日韩更舒展的行高  (16px*1.75=28px)*/
     --leading-loose: 1.75;
   }
-
   /* ==================================================
    Root Typography
    根级排版基线
@@ -137,7 +135,6 @@
     /* Improve long-text wrapping 优化长文本换行 */
     text-wrap: pretty;
   }
-
   /* Language-specific font optimization 语言特定字体优化  */
   /* Simplified Chinese 简体中文 */
   :where(:lang(zh)),
@@ -145,35 +142,29 @@
   :where(:lang(zh-Hans)) {
     font-family: var(--font-zh-sc), var(--font-sans), var(--font-emoji), var(--font-fallback);
   }
-
   /* Traditional Chinese 繁体中文 */
   :where(:lang(zh-TW)),
   :where(:lang(zh-HK)),
   :where(:lang(zh-Hant)) {
     font-family: var(--font-zh-tc), var(--font-sans), var(--font-emoji), var(--font-fallback);
   }
-
   /* Japanese 日文 */
   :where(:lang(ja)) {
     font-family: var(--font-ja), var(--font-sans), var(--font-emoji), var(--font-fallback);
   }
-
   /* Arabic 阿拉伯语 */
   :where(:lang(ar)) {
     font-family: var(--font-ar), var(--font-sans), var(--font-emoji), var(--font-fallback);
   }
-
   /* CJK & Arabic line-height optimization 中日韩与阿拉伯语行高优化 */
   :where(:lang(zh)),
   :where(:lang(ja)) {
     line-height: var(--leading-loose);
   }
-
   :where(:lang(ar)),
   :where(:lang(ko)) {
     line-height: var(--leading-relaxed);
   }
-
   /* ==================================================
    Document Structure
    文档结构
@@ -184,29 +175,24 @@
     -webkit-font-smoothing: antialiased;
     scroll-behavior: auto;
   }
-
   html:focus-within {
     scroll-behavior: smooth;
   }
-
   body {
     /* Remove default margin 移除浏览器默认外边距 */
     margin: 0;
   }
-
   /* Use border-box for predictable sizing 使用更直观的盒模型，宽高包含 padding 和 border */
   *,
   *::before,
   *::after {
     box-sizing: border-box;
   }
-
   /* 选择文本背景色跟随系统高亮色 */
   ::selection {
     background-color: Highlight;
     color: HighlightText;
   }
-
   /* ==================================================
    Text-level Semantics
    文本语义元素
@@ -215,21 +201,17 @@
   h1 {
     line-height: var(--leading-tight);
   }
-
   h2,
   h3 {
     line-height: var(--leading-snug);
   }
-
   h4,
   h5 {
     line-height: var(--leading-compact);
   }
-
   h6 {
     line-height: var(--leading-normal);
   }
-
   h1,
   h2,
   h3,
@@ -238,14 +220,12 @@
   h6 {
     margin-block: 0;
   }
-
   /* Fine-tune line-height for CJK text cjk微调 */
   :where(:lang(zh)) h1,
   :where(:lang(ja)) h1,
   :where(:lang(ko)) h1 {
     line-height: calc(var(--leading-tight) + 0.05);
   }
-
   :where(:lang(zh)) h2,
   :where(:lang(ja)) h2,
   :where(:lang(ko)) h2,
@@ -254,13 +234,11 @@
   :where(:lang(ko)) h3 {
     line-height: calc(var(--leading-snug) + 0.05);
   }
-
   /* Stronger bold weight in WebKit 修正加粗权重 */
   b,
   strong {
     font-weight: bolder;
   }
-
   /* Monospace consistency 等宽字体统一 */
   code,
   kbd,
@@ -270,12 +248,10 @@
     /* Keep same size as body 保持与正文一致 */
     font-size: 1em;
   }
-
   /* Small text size 小号文本 */
   small {
     font-size: 80%;
   }
-
   /* Sub/Sup line-height fix 上下标不影响行高 */
   sub,
   sup {
@@ -284,15 +260,12 @@
     position: relative;
     vertical-align: baseline;
   }
-
   sub {
     bottom: -0.25em;
   }
-
   sup {
     top: -0.5em;
   }
-
   /* ==================================================
    Forms
    表单元素
@@ -307,63 +280,52 @@
     line-height: var(--leading-normal);
     margin: 0;
   }
-
   /* Datalist arrow vertical alignment 修正 datalist 图标垂直对齐 */
   input[list]::-webkit-calendar-picker-indicator {
     line-height: 1em;
   }
-
   /* Fieldset legend padding reset 移除 legend 内边距 */
   legend {
     padding: 0;
   }
-
   /* Progress baseline alignment 修正进度条对齐 */
   progress {
     vertical-align: baseline;
   }
-
   /* Safari number input button fix 修正 Safari 数字输入按钮 */
   ::-webkit-inner-spin-button,
   ::-webkit-outer-spin-button {
     height: auto;
   }
-
   /* Search input normalization 搜索框外观统一 */
-  [type='search'] {
+  [type="search"] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
   }
-
   /* Remove macOS search decoration 移除 macOS 搜索装饰 */
   ::-webkit-search-decoration {
     -webkit-appearance: none;
   }
-
   /* File upload button styling fix 文件上传按钮样式修正 */
   ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
   }
-
   /* Restore button appearance in iOS 恢复 iOS 按钮外观 */
   button,
-  [type='button'],
-  [type='reset'],
-  [type='submit'] {
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
   }
-
   /* Disabled state cursor 禁用态鼠标样式 */
   :disabled,
   [aria-disabled="true"] {
     cursor: not-allowed;
   }
-
   /* Textarea usability 文本域体验优化 */
   textarea {
-    border-radius: var(--default-border-radius);
     overflow: auto;
     /* Scroll when needed 内容溢出时滚动 */
     resize: vertical;
@@ -371,7 +333,6 @@
     vertical-align: top;
     /* Better inline alignment 更自然的行内对齐 */
   }
-
   /* Inline control alignment 行内控件对齐 */
   input,
   select,
@@ -380,7 +341,6 @@
   button {
     vertical-align: middle;
   }
-
   /* Accent color for native controls 原生控件主题色（checkbox / radio / progress / meter） */
   input[type="checkbox"],
   input[type="radio"],
@@ -388,21 +348,13 @@
   meter {
     accent-color: var(--default-accent-color);
   }
-
   /* Use default border radius 默认使用圆角的节点 */
   button,
   select,
   textarea,
-  input:where(:not([type=range], [type=radio], [type=checkbox])) {
-    border-radius: var(--default-border-radius, 2px);
-    border-width: 1px;
+  input:where(:not([type="range"], [type="file"],[type="radio"], [type="checkbox"])) {
+    border-radius: var(--default-border-radius);
   }
-
-  ::file-selector-button {
-    border-radius: var(--default-border-radius, 2px);
-    border-width: 1px;
-  }
-
   /* ==================================================
    Interactive Elements
    交互元素
@@ -411,7 +363,6 @@
   summary {
     display: list-item;
   }
-
   /* Label usability 标签可用性优化 */
   label {
     /* Indicate clickable 表示可点击 */
@@ -420,17 +371,14 @@
     align-items: center;
     /* Show pointer cursor when label contains a checkbox or radio 如果包裹了radio或checkbox则显示手型 */
   }
-
   label:where(:has(input)) {
     cursor: pointer;
   }
-
   /* Form container positioning 表单容器定位基准 */
   form {
     position: relative;
     /* For loading overlays 等绝对定位子元素 */
   }
-
   /* ==================================================
    Media Elements
    媒体元素
@@ -440,7 +388,6 @@
   svg {
     vertical-align: middle;
   }
-
   /* Responsive media safety 响应式媒体安全网 */
   img,
   video,
@@ -449,7 +396,6 @@
     max-width: 100%;
     height: auto;
   }
-
   /* Block media elements 块级媒体元素，图片保持行内属性 */
   video,
   audio,
@@ -460,19 +406,16 @@
   object {
     display: block;
   }
-
   /* Full-width iframe 全宽 iframe */
   iframe {
     width: 100%;
     border: 0;
   }
-
   /* Improve readability of the abbr element 增强abbr标签的可读性 */
   abbr:where([title]) {
     text-decoration: underline dotted;
     cursor: help;
   }
-
   /* ==================================================
    Content Elements
    内容元素
@@ -483,25 +426,21 @@
     height: 1px;
     background-color: currentColor;
   }
-
   /* Preformatted text wrapping 预格式文本自动换行 */
   pre {
     white-space: pre-wrap;
     overflow-wrap: break-word;
   }
-
   /* Code highlighting is typically structured as pre + code 代码高亮布局通常是pre+code */
-  pre>code {
+  pre > code {
     display: block;
   }
-
   /* Keyboard input styling 键盘输入样式 */
   kbd {
     display: inline-flex;
     vertical-align: middle;
     user-select: none;
   }
-
   /* Article long-text wrapping 长文本断行优化 */
   article {
     overflow-wrap: break-word;
@@ -509,7 +448,6 @@
     hyphens: auto;
     /* Natural hyphenation 自动连字符 */
   }
-
   /* ==================================================
    Tables
    表格
@@ -522,17 +460,14 @@
     table-layout: fixed;
     /* Faster & stable column width 更稳定高效 */
   }
-
   table th {
     text-align: inherit;
   }
-
   /* Reduce motion 减少动画 */
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
     }
-
     *,
     *::before,
     *::after {

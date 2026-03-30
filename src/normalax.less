@@ -1,6 +1,6 @@
 /**
  * Normalax
- * Last modified: 2026-03-30 14:20:48
+ * Last modified: 2026-03-30 15:02:52
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -372,7 +372,7 @@
   }
 
   /* Search input normalization 搜索框外观统一 */
-  [type='search'] {
+  [type="search"] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
   }
@@ -390,9 +390,9 @@
 
   /* Restore button appearance in iOS 恢复 iOS 按钮外观 */
   button,
-  [type='button'],
-  [type='reset'],
-  [type='submit'] {
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
   }
@@ -405,8 +405,6 @@
 
   /* Textarea usability 文本域体验优化 */
   textarea {
-    border-radius: var(--default-border-radius);
-
     overflow: auto;
     /* Scroll when needed 内容溢出时滚动 */
     resize: vertical;
@@ -432,10 +430,11 @@
     accent-color: var(--default-accent-color);
   }
 
-  /* 默认使用圆角的节点 */
+  /* Use default border radius 默认使用圆角的节点 */
   button,
   select,
-  input:where(:not([type=range], [type=radio], [type=checkbox])) {
+    textarea,
+ input:where(:not([type="range"], [type="file"],[type="radio"], [type="checkbox"])) {
     border-radius: var(--default-border-radius);
   }
 

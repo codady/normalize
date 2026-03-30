@@ -2,6 +2,24 @@
 
 All changes to Normalax including new features, updates, and removals are documented here.
 
+## [v0.0.5] - 2026-03-30
+
+### Distribution Files
+- **Mini file**: https://unpkg.com/@codady/normalax@0.0.5/dist/normalax.min.css
+- **Source file**: https://unpkg.com/@codady/normalax@0.0.5/src/normalax.css
+- **Less file**: https://unpkg.com/@codady/normalax@0.0.5/src/normalax.less
+
+### Changes
+
+#### Fixed
+- Add the `cursor: pointer` attribute to `button` and `type=button/submit/reset` tags. 对`button`和`type=button/submit/reset`标签增加`cursor: pointer`属性。
+
+#### Added
+- Null
+
+#### Removed
+- Null
+
 ## [v0.0.4] - 2026-03-30
 
 ### Distribution Files

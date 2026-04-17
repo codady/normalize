@@ -1,6 +1,6 @@
 /**
  * Normalax
- * Last modified: 2026-03-30 15:02:52
+ * Last modified: 2026-04-17 14:40:03
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -433,8 +433,8 @@
   /* Use default border radius 默认使用圆角的节点 */
   button,
   select,
-    textarea,
- input:where(:not([type="range"], [type="file"],[type="radio"], [type="checkbox"])) {
+  textarea,
+  input:where(:not([type="radio"], [type="checkbox"])) {
     border-radius: var(--default-border-radius);
   }
 
@@ -491,6 +491,7 @@
   }
 
   /* Block media elements 块级媒体元素，图片保持行内属性 */
+  img,
   video,
   audio,
   picture,
@@ -571,12 +572,19 @@
     }
   }
 
-  /* Reduce motion 减少动画 */
+  /* Reduce motion 减少动画 
+  * 有两个途径开启motion reduce功能
+  * 1.在电脑操作系统中设置取消动画
+  * 2.在浏览器设置中使用motion reduce设置
+  * 只要设置其中一个便将取消动画
+  */
   @media (prefers-reduced-motion: reduce) {
     html {
+      /* 页面锚记之间跳转将没有平滑滚动动画 */
       scroll-behavior: auto;
     }
 
+    /* 所有animation动画失效 */
     *,
     *::before,
     *::after {

@@ -2,6 +2,26 @@
 
 All changes to Normalax including new features, updates, and removals are documented here.
 
+## [v0.0.8] - 2026-04-17
+
+### Distribution Files
+- **Mini file**: https://unpkg.com/@codady/normalax@0.0.8/dist/normalax.min.css
+- **Source file**: https://unpkg.com/@codady/normalax@0.0.8/src/normalax.css
+- **Less file**: https://unpkg.com/@codady/normalax@0.0.8/src/normalax.less
+
+### Changes
+
+#### Fixed
+- type=range和type=file均默认使用圆角
+- img标签默认使用display:block样式
+
+#### Added
+- Null
+
+#### Removed
+- Null
+
+
 ## [v0.0.7] - 2026-03-30
 
 ### Distribution Files

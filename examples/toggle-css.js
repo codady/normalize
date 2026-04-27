@@ -1,10 +1,10 @@
 (function () {
   function initCssToggle(options = {}) {
     const {
-      cssId = 'normalax-css',
+      cssId = 'normalize-css',
       cssHref = '../src/normalize.css',
-      buttonTextOn = '✅ 已加载 normalax.css',
-      buttonTextOff = '❌ 已移除 normalax.css'
+      buttonTextOn = '✅ 已加载 normalize.css',
+      buttonTextOff = '❌ 已移除 normalize.css'
     } = options;
 
     // 创建按钮

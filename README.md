@@ -1,11 +1,11 @@
 
-# Normalax
+# @codady/normalize
 
 A modern alternative to normalize.css, focused on typography, form usability, and cross-browser consistency.
 
 ### Demos
 
-[See all demos](https://unpkg.com/normalax/examples/index.html)
+[See all demos](https://unpkg.com/@codady/normalize/examples/index.html)
 
 
 ### 📥 Installation
@@ -13,19 +13,19 @@ A modern alternative to normalize.css, focused on typography, form usability, an
 Install via npm:
 
 ```bash
-npm install normalax
+npm install normalize
 ```
 
 Or using yarn:
 
 ```bash
-yarn add normalax
+yarn add normalize
 ```
 
 Or using pnpm:
 
 ```bash
-pnpm add normalax
+pnpm add normalize
 ```
 
 ---
@@ -35,32 +35,32 @@ pnpm add normalax
 Import the stylesheet in your project:
 
 ```js
-import 'normalax';
+import 'normalize';
 ```
 
-👉 This will automatically apply Normalax styles.
+👉 This will automatically apply @codady/normalize styles.
 
 ---
 
 ### 🌐 CDN Usage (Optional)
 
-You can also use Normalax via CDN:
+You can also use @codady/normalize via CDN:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/normalax/dist/normalax.css">
+<link rel="stylesheet" href="https://unpkg.com/@codady/normalize/dist/normalize.css">
 ```
 
 Or:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalax/dist/normalax.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codady/normalize/dist/normalize.css">
 ```
 
 ---
 
 ## ✨ Philosophy
 
-Normalax is designed with the following principles:
+@codady/normalize is designed with the following principles:
 
 - Fix browser inconsistencies
 - Provide a clean typography baseline
@@ -81,13 +81,13 @@ Normalax is designed with the following principles:
 
 ## 🎯 Goals
 
-Normalax is **not**:
+@codady/normalize is **not**:
 
 - ❌ A CSS framework
 - ❌ A design system
 - ❌ A UI component library
 
-Normalax **is**:
+@codady/normalize **is**:
 
 - ✅ A foundational CSS layer
 - ✅ A better normalize/reset
@@ -97,7 +97,7 @@ Normalax **is**:
 
 ## 🧩 Variable System
 
-Normalax uses a minimal and intentional variable system.
+@codady/normalize uses a minimal and intentional variable system.
 
 ### Public Override Tokens
 
@@ -129,7 +129,7 @@ These variables are used internally and should generally not be modified:
 ## 📦 Usage
 
 ```html
-<link rel="stylesheet" href="normalax.css">
+<link rel="stylesheet" href="normalize.css">
 ```
 
 ---
@@ -147,7 +147,7 @@ These variables are used internally and should generally not be modified:
 
 ## ⚖️ Comparison
 
-| Feature             | Normalax | normalize.css | reset.css |
+| Feature             | @codady/normalize | normalize.css | reset.css |
 | ------------------- | -------- | ------------- | --------- |
 | Modern CSS support  | ✅        | ❌             | ❌         |
 | Typography baseline | ✅        | ⚠️ Minimal    | ❌         |
@@ -168,7 +168,7 @@ MIT License
 
 ### 演示
 
-[查看所有演示](https://unpkg.com/normalax/examples/index.html)
+[查看所有演示](https://unpkg.com/@codady/normalize/examples/index.html)
 
 
 ### 📥 安装
@@ -176,19 +176,19 @@ MIT License
 通过 npm 安装：
 
 ```bash
-npm install normalax
+npm install normalize
 ```
 
 或者使用 yarn：
 
 ```bash
-yarn add normalax
+yarn add normalize
 ```
 
 或者使用 pnpm：
 
 ```bash
-pnpm add normalax
+pnpm add normalize
 ```
 
 ---
@@ -198,10 +198,10 @@ pnpm add normalax
 在项目中直接引入：
 
 ```js
-import 'normalax';
+import 'normalize';
 ```
 
-👉 即可自动生效 Normalax 样式。
+👉 即可自动生效 @codady/normalize 样式。
 
 ---
 
@@ -210,19 +210,19 @@ import 'normalax';
 你也可以通过 CDN 使用：
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/normalax/dist/normalax.css">
+<link rel="stylesheet" href="https://unpkg.com/@codady/normalize/dist/normalize.css">
 ```
 
 或者：
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalax/dist/normalax.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codady/normalize/dist/normalize.css">
 ```
 
 
 ## ✨ 设计理念
 
-Normalax 的设计目标：
+@codady/normalize 的设计目标：
 
 * 修正浏览器默认样式差异
 * 提供干净统一的排版基线
@@ -243,13 +243,13 @@ Normalax 的设计目标：
 
 ## 🎯 项目定位
 
-Normalax 不是：
+@codady/normalize 不是：
 
 * ❌ UI 框架
 * ❌ 设计系统
 * ❌ 组件库
 
-Normalax 是：
+@codady/normalize 是：
 
 * ✅ 基础样式层
 * ✅ 更现代的 normalize
@@ -259,7 +259,7 @@ Normalax 是：
 
 ## 🧩 变量系统
 
-Normalax 提供两类变量：
+@codady/normalize 提供两类变量：
 
 ### 可覆盖变量（Public API）
 
@@ -293,7 +293,7 @@ Normalax 提供两类变量：
 ## 📦 使用方式
 
 ```html
-<link rel="stylesheet" href="normalax.css">
+<link rel="stylesheet" href="normalize.css">
 ```
 
 ---

@@ -1,6 +1,6 @@
 
 /**
- *  Last modified: 2026-03-28 11:20:17
+ *  Last modified: 2026-04-27 16:55:27
  */
 import { exec } from 'child_process';
 
@@ -29,7 +29,7 @@ const minifyJsFile = (input, output) => {
 const minifyJs = async () => {
   try {
     // 压缩 CSS 文件
-    await runCommand('cleancss -o ./dist/normalax.min.css ./src/normalax.css');
+    await runCommand('cleancss -o ./dist/normalize.min.css ./src/normalize.css');
     
     console.log('Minification complete.');
   } catch (error) {

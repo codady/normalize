@@ -2,7 +2,7 @@
   function initCssToggle(options = {}) {
     const {
       cssId = 'normalax-css',
-      cssHref = '../src/normalax.css',
+      cssHref = '../src/normalize.css',
       buttonTextOn = '✅ 已加载 normalax.css',
       buttonTextOff = '❌ 已移除 normalax.css'
     } = options;

@@ -1,6 +1,6 @@
 /**
- * Normalax
- * Last modified: 2026-04-17 14:40:03
+ * @codady/normalize
+ * Last modified: 2026-04-27 21:00:48
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -53,17 +53,13 @@
  * --default-font-variation-settings
  *   → Variable font axis control
  *   → 控制可变字体轴参数
- *   
-* --default-border-radius
- *   → Variable border radius of input or button
- *   → 控制inputbutton元素的圆角
  */
 
 
   /**
  * Internal Tokens（内部变量，不建议直接修改）
  * --------------------------------------------------
- * These variables define the internal design system of Normalax.
+ * These variables define the internal design system of @codady/normalize.
  * They provide consistent fallback values and are used throughout the stylesheet.
  *
  * 这些变量属于内部实现，用于保证一致性和回退逻辑。
@@ -430,13 +426,7 @@
     accent-color: var(--default-accent-color);
   }
 
-  /* Use default border radius 默认使用圆角的节点 */
-  button,
-  select,
-  textarea,
-  input:where(:not([type="radio"], [type="checkbox"])) {
-    border-radius: var(--default-border-radius);
-  }
+
 
 
   /* ==================================================
@@ -490,16 +480,21 @@
     height: auto;
   }
 
-  /* Block media elements 块级媒体元素，图片保持行内属性 */
-  img,
-  video,
-  audio,
+  /* Block media elements 块级媒体元素 */
   picture,
   iframe,
   canvas,
   embed,
   object {
     display: block;
+  }
+  
+  /* Keep images at equal width with inherited border-radius. 确保两个标签等宽，并使用相同的圆角 */
+  picture img{
+    border-radius: inherit;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   /* Full-width iframe 全宽 iframe */

@@ -2,127 +2,13 @@
 
 All changes to Normalax including new features, updates, and removals are documented here.
 
-## [v0.0.8] - 2026-04-17
+
+## [v0.0.1] - 2026-04-27
 
 ### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.8/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.8/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.8/src/normalax.less
-
-### Changes
-
-#### Fixed
-- type=range和type=file均默认使用圆角
-- img标签默认使用display:block样式
-
-#### Added
-- Null
-
-#### Removed
-- Null
-
-
-## [v0.0.7] - 2026-03-30
-
-### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.7/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.7/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.7/src/normalax.less
-
-### Changes
-
-#### Fixed
-- Fixed some bugs。
-
-#### Added
-- Null
-
-#### Removed
-- Null
-
-## [v0.0.6] - 2026-03-30
-
-### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.6/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.6/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.6/src/normalax.less
-
-### Changes
-
-#### Fixed
-- Null。
-
-#### Added
-- Add `--default-border-radius` CSS variable. 增加`--default-border-radius`变量。
-- Add `examples/index.html`. 增加了`examples/index.html`页面。
-
-#### Removed
-- Null
-
-
-## [v0.0.5] - 2026-03-30
-
-### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.5/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.5/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.5/src/normalax.less
-
-### Changes
-
-#### Fixed
-- Add the `cursor: pointer` attribute to `button` and `type=button/submit/reset` tags. 对`button`和`type=button/submit/reset`标签增加`cursor: pointer`属性。
-
-#### Added
-- Null
-
-#### Removed
-- Null
-
-## [v0.0.4] - 2026-03-30
-
-### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.4/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.4/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.4/src/normalax.less
-
-### Changes
-
-#### Fixed
-- Remove the `margin` attribute of `h1~h6`. 去掉`h1~h6`的`margin`属性。
-
-#### Added
-- Null
-
-#### Removed
-- Null
-
-
-## [v0.0.3] - 2026-03-29
-
-### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.3/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.3/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.3/src/normalax.less
-
-### Changes
-
-#### Fixed
-- Change the CSS variable `--lh-*` to `--leading-*`. 将CSS变量`--lh-*`改为`--leading-*`。
-
-#### Added
-- Null
-
-#### Removed
-- Null
-
-
-
-## [v0.0.2] - 2026-03-28
-
-### Distribution Files
-- **Mini file**: https://unpkg.com/@codady/normalax@0.0.2/dist/normalax.min.css
-- **Source file**: https://unpkg.com/@codady/normalax@0.0.2/src/normalax.css
-- **Less file**: https://unpkg.com/@codady/normalax@0.0.2/src/normalax.less
+- **Mini file**: https://unpkg.com/@codady/normalize@0.0.1/dist/normalize.min.css
+- **Source file**: https://unpkg.com/@codady/normalize@0.0.1/src/normalize.css
+- **Less file**: https://unpkg.com/@codady/normalize@0.0.1/src/normalize.less
 
 ### Changes
 

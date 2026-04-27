@@ -1,14 +1,14 @@
 {
-  "name": "normalax",
-  "version": "0.0.8",
+  "name": "@codady/normalize",
+  "version": "0.0.1",
   "publishConfig": {
     "access": "public"
   },
   "author": "AXUI Development Team",
   "license": "MIT",
-  "description": "Normalax, A modern alternative to normalize.css, focused on typography, form usability, and cross-browser consistency.",
+  "description": "@codady/normalize, A modern alternative to normalize.css, focused on typography, form usability, and cross-browser consistency.",
   "exports": {
-    ".": "./dist/normalax.min.css"
+    ".": "./dist/normalize.min.css"
   },
   "type":"module",
   "directories": {
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codady/normalax"
+    "url": "https://github.com/codady/normalize"
   },
   "extraRepositories": [
     {
       "type": "git",
-      "url": "https://gitee.com/codady/normalax"
+      "url": "https://gitee.com/codady/normalize"
     }
   ],
   "keywords": [
@@ -56,7 +56,7 @@
     "css3"
   ],
   "bugs": {
-    "url": "https://github.com/codady/normalax/issues"
+    "url": "https://github.com/codady/normalize/issues"
   },
   "homepage": "https://www.axui.cn",
   "dependencies": {

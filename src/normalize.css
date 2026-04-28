@@ -1,6 +1,6 @@
 /**
  * @codady/normalize
- * Last modified: 2026-04-28 08:49:51
+ * Last modified: 2026-04-28 09:07:50
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -78,6 +78,8 @@
  * --leading-tight / snug / compact / normal / relaxed / loose
  *   → Line-height scale for typography hierarchy
  */
+  @layer base {
+    
   :root,
   :host {
     /* ---------- Font Stacks 字体栈 ---------- */
@@ -110,7 +112,7 @@
     --leading-loose: 1.75;
   }
 
-  @layer base {
+ 
     
   /* ==================================================
    Root Typography

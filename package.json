@@ -1,6 +1,6 @@
 {
   "name": "@codady/normalize",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publishConfig": {
     "access": "public"
   },
@@ -10,7 +10,7 @@
   "exports": {
     ".": "./dist/normalize.min.css"
   },
-  "type":"module",
+  "type": "module",
   "directories": {
     "doc": "docs"
   },
@@ -38,7 +38,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codady/normalize"
+    "url": "git+https://github.com/codady/normalize.git"
   },
   "extraRepositories": [
     {

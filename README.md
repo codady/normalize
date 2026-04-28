@@ -35,7 +35,7 @@ pnpm add normalize
 Import the stylesheet in your project:
 
 ```js
-import 'normalize';
+import '@codady/normalize';
 ```
 
 👉 This will automatically apply @codady/normalize styles.
@@ -47,13 +47,13 @@ import 'normalize';
 You can also use @codady/normalize via CDN:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@codady/normalize/dist/normalize.css">
+<link rel="stylesheet" href="https://unpkg.com/@codady/normalize/dist/normalize.min.css">
 ```
 
 Or:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codady/normalize/dist/normalize.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codady/normalize/dist/normalize.min.css">
 ```
 
 ---
@@ -198,7 +198,7 @@ pnpm add normalize
 在项目中直接引入：
 
 ```js
-import 'normalize';
+import '@codady/normalize';
 ```
 
 👉 即可自动生效 @codady/normalize 样式。
@@ -210,13 +210,13 @@ import 'normalize';
 你也可以通过 CDN 使用：
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@codady/normalize/dist/normalize.css">
+<link rel="stylesheet" href="https://unpkg.com/@codady/normalize/dist/normalize.min.css">
 ```
 
 或者：
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codady/normalize/dist/normalize.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@codady/normalize/dist/normalize.min.css">
 ```
 
 

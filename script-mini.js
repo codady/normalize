@@ -1,6 +1,6 @@
 
 /**
- *  Last modified: 2026-04-27 16:55:27
+ *  Last modified: 2026-04-28 08:52:19
  */
 import { exec } from 'child_process';
 
@@ -30,6 +30,7 @@ const minifyJs = async () => {
   try {
     // 压缩 CSS 文件
     await runCommand('cleancss -o ./dist/normalize.min.css ./src/normalize.css');
+    await runCommand('cleancss -o ./dist/normalize.tailwind.min.css ./src/normalize.tailwind.css');
     
     console.log('Minification complete.');
   } catch (error) {

@@ -1,6 +1,6 @@
 /**
  * @codady/normalize
- * Last modified: 2026-04-27 21:14:52
+ * Last modified: 2026-04-28 08:49:51
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -8,7 +8,7 @@
  * 3. Improve form & media usability 优化表单与媒体元素体验
  * 4. Stay layout-neutral 尽量不干涉具体布局
  */
-@layer base {
+
   /* ==================================================
    Design Tokens — Typography
    设计令牌：字体系统
@@ -109,6 +109,9 @@
     /* More breathing room for CJK 中日韩更舒展的行高  (16px*1.75=28px)*/
     --leading-loose: 1.75;
   }
+
+  @layer base {
+    
   /* ==================================================
    Root Typography
    根级排版基线

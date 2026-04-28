@@ -1,6 +1,6 @@
 {
   "name": "@codady/normalize",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publishConfig": {
     "access": "public"
   },
@@ -8,7 +8,8 @@
   "license": "MIT",
   "description": "@codady/normalize, A modern alternative to normalize.css, focused on typography, form usability, and cross-browser consistency.",
   "exports": {
-    ".": "./dist/normalize.min.css"
+    ".": "./dist/normalize.min.css",
+    "./tailwind": "./dist/normalize.tailwind.min.css"
   },
   "type": "module",
   "directories": {

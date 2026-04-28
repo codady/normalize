@@ -38,6 +38,13 @@ Import the stylesheet in your project:
 import '@codady/normalize';
 ```
 
+Or:
+
+
+```js
+import '@codady/normalize/tailwind';
+```
+
 👉 This will automatically apply @codady/normalize styles.
 
 ---
@@ -199,6 +206,12 @@ pnpm add normalize
 
 ```js
 import '@codady/normalize';
+```
+
+或者
+
+```js
+import '@codady/normalize/tailwind';
 ```
 
 👉 即可自动生效 @codady/normalize 样式。

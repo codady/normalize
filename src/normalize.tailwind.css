@@ -1,5 +1,5 @@
 /**
- * Last modified: 2026-04-28 08:51:12
+ * Last modified: 2026-05-09 16:26:18
  */
 @theme {
     /* ---------- Font Stacks 字体栈 ---------- */
@@ -60,37 +60,37 @@
 
     /* Language-specific font optimization 语言特定字体优化  */
     /* Simplified Chinese 简体中文 */
-    :where(:lang(zh)),
-    :where(:lang(zh-CN)),
-    :where(:lang(zh-Hans)) {
+    :where([lang]:lang(zh)),
+    :where([lang]:lang(zh-CN)),
+    :where([lang]:lang(zh-Hans)) {
         font-family: var(--font-zh-sc), var(--font-sans), var(--font-emoji), var(--font-fallback);
     }
 
     /* Traditional Chinese 繁体中文 */
-    :where(:lang(zh-TW)),
-    :where(:lang(zh-HK)),
-    :where(:lang(zh-Hant)) {
+    :where([lang]:lang(zh-TW)),
+    :where([lang]:lang(zh-HK)),
+    :where([lang]:lang(zh-Hant)) {
         font-family: var(--font-zh-tc), var(--font-sans), var(--font-emoji), var(--font-fallback);
     }
 
     /* Japanese 日文 */
-    :where(:lang(ja)) {
+    :where([lang]:lang(ja)) {
         font-family: var(--font-ja), var(--font-sans), var(--font-emoji), var(--font-fallback);
     }
 
     /* Arabic 阿拉伯语 */
-    :where(:lang(ar)) {
+    :where([lang]:lang(ar)) {
         font-family: var(--font-ar), var(--font-sans), var(--font-emoji), var(--font-fallback);
     }
 
     /* CJK & Arabic line-height optimization 中日韩与阿拉伯语行高优化 */
-    :where(:lang(zh)),
-    :where(:lang(ja)) {
+    :where([lang]:lang(zh)),
+    :where([lang]:lang(ja)) {
         line-height: var(--leading-loose);
     }
 
-    :where(:lang(ar)),
-    :where(:lang(ko)) {
+    :where([lang]:lang(ar)),
+    :where([lang]:lang(ko)) {
         line-height: var(--leading-relaxed);
     }
 
@@ -160,18 +160,18 @@
     }
 
     /* Fine-tune line-height for CJK text cjk微调 */
-    :where(:lang(zh)) h1,
-    :where(:lang(ja)) h1,
-    :where(:lang(ko)) h1 {
+    :where([lang]:lang(zh)) h1,
+    :where([lang]:lang(ja)) h1,
+    :where([lang]:lang(ko)) h1 {
         line-height: calc(var(--leading-tight) + 0.05);
     }
 
-    :where(:lang(zh)) h2,
-    :where(:lang(ja)) h2,
-    :where(:lang(ko)) h2,
-    :where(:lang(zh)) h3,
-    :where(:lang(ja)) h3,
-    :where(:lang(ko)) h3 {
+    :where([lang]:lang(zh)) h2,
+    :where([lang]:lang(ja)) h2,
+    :where([lang]:lang(ko)) h2,
+    :where([lang]:lang(zh)) h3,
+    :where([lang]:lang(ja)) h3,
+    :where([lang]:lang(ko)) h3 {
         line-height: calc(var(--leading-snug) + 0.05);
     }
 

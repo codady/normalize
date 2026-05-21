@@ -2,6 +2,22 @@
 
 All changes to Normalize including new features, updates, and removals are documented here.
 
+## [v0.0.7] - 2026-05-21
+
+### Distribution Files
+- **Mini file**: https://unpkg.com/@codady/normalize@0.0.7/dist/normalize.min.css
+- **Taiwind file**: https://unpkg.com/@codady/normalize@0.0.7/dist/normalize.tailwind.min.css
+
+### Changes
+
+#### Fixed
+- Null
+
+#### Added
+- Null
+
+#### Removed
+- Cancel the setting of height: auto for the audio node. 取消对audio节点设置height:auto
 
 ## [v0.0.6] - 2026-05-09
 

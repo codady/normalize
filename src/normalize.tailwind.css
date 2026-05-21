@@ -1,5 +1,5 @@
 /**
- * Last modified: 2026-05-09 16:26:18
+ * Last modified: 2026-05-21 11:35:46
  */
 @theme {
     /* ---------- Font Stacks 字体栈 ---------- */
@@ -349,7 +349,8 @@
     /* Responsive media safety 响应式媒体安全网 */
     img,
     video,
-    audio,
+    /* 如果设为auto，那么audio节点将无法显示
+    audio,*/
     picture {
         max-width: 100%;
         height: auto;

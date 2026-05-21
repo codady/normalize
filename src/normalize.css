@@ -1,6 +1,6 @@
 /**
  * @codady/normalize
- * Last modified: 2026-05-09 16:26:48
+ * Last modified: 2026-05-21 11:35:24
  *
  * Philosophy 设计理念：
  * 1. Fix browser inconsistencies 修正浏览器默认差异
@@ -385,10 +385,11 @@
   /* Responsive media safety 响应式媒体安全网 */
   img,
   video,
-  audio,
+  /* 如果设为auto，那么audio节点将无法显示
+  audio,*/
   picture {
     max-width: 100%;
-    height: auto;
+     height: auto;
   }
   /* Block media elements 块级媒体元素 */
   picture,
